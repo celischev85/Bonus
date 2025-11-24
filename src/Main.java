@@ -8,7 +8,7 @@ public class Main {
         int bonus = 0;
         int totalBalance = 0;
 
-        if (amountUp >= 1000) {
+        if (amountUp > 1000) {
             bonus = (amountUp / 100);
         }
 
