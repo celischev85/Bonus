@@ -2,24 +2,23 @@ public class Main {
     public static void main(String[] args) {
 
         int Balance = 300;
-        int amountUp = 1500;
+        int AmountUp = 1500;
 
 
-        int bonus = 0;
-        int totalBalance = 0;
+        int Bonus = 0;
+        int Totalbalance;
 
-        if (amountUp > 1000) {
-            bonus = (amountUp / 100);
+        if (AmountUp > 1000) {
+            Bonus = (AmountUp / 100);
         }
+        Totalbalance = Balance + Bonus + AmountUp;
 
-        totalBalance = Balance + bonus + amountUp;
-
-        if (bonus > 0) {
-            System.out.println("Начислено " + bonus + " бонусных руб.");
-            System.out.println("Итоговый баланс: " + totalBalance + " руб.");
+        if (Bonus > 0) {
+            System.out.println("Начислено " + Bonus + " бонусных руб.");
+            System.out.println("Итоговый баланс: " + Totalbalance + " руб.");
         } else {
             System.out.println("Бонусные рубли отсутствуют.");
-            System.out.println("Итоговый баланс: " + totalBalance + " руб.");
+            System.out.println("Итоговый баланс: " + Totalbalance + " руб.");
         }
     }
 }
